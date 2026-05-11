@@ -55,8 +55,9 @@
     enable = true;
     shellAliases = {
       claude = "claude --dangerously-skip-permissions";
-      rebuild = "sudo nixos-rebuild switch";
       codex = "codex --dangerously-bypass-approvals-and-sandbox";
+      rebuild = "sudo nixos-rebuild switch --flake /home/darrenb/Documents/coding/nixos-config#nixos";
+      nixsync = "cd /home/darrenb/Documents/coding/nixos-config && git pull --ff-only && sudo NIXPKGS_ALLOW_UNFREE=1 nixos-rebuild switch --flake .#nixos";
     };
     ohMyZsh = {
       enable = true;
