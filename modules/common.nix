@@ -80,6 +80,7 @@
     code-cursor
     google-chrome
     ghostty
+    gnumake
     git
     gh
     qemu
